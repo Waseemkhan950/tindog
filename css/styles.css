@@ -1,0 +1,173 @@
+body {
+  font-family: "Montserrat-black", sans-serif;
+}
+
+a {
+  color: #f0ffff;
+}
+
+/* container fluid make the responsive smooth. it also contains everything from right to left in a row. */
+h1 {
+  font-family: "Montserrat-bold", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Montserrat-bold", sans-serif;
+  font-size: 2.1rem;
+  font-weight: bold;
+  /* line-height: 1.5rem; */
+}
+
+h3 {
+  font-family: "Montserrat-bold", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+#title {
+  background-color: #ff4f68;
+  color: #f0ffff;
+}
+
+.container-fluid {
+  padding: 2% 10% 7%;
+}
+
+
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.download {
+  margin: 5% 3% 5% 0;
+}
+
+.iphone {
+  transform: rotate(25deg);
+  width: 50%;
+  right: 30%;
+  /* right: will move the image towards right */
+  /* this width is according to its parent div. it will take 50% of its parent */
+  /* to hide the image behind feature section we need to use z-index for the iphone image. for that we will give it an absolute
+  position and z-index = -1 to make it appear behind everything. */
+  position: absolute;
+
+}
+
+/* following media query is to perform responsiveness. it only triggers when certain condition is met. you can learn more about them on
+mdn */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .iphone {
+    position: static;
+    transform: rotate(0);
+  }
+
+}
+
+/* Feature Section */
+#features {
+  text-align: center;
+  padding: 7% 7%;
+  background-color: #ffff;
+  position: relative;
+  z-index: 1;
+}
+
+.icon {
+  color: #ef8172;
+  padding: 1rem;
+}
+
+.icon:hover {
+  color: #ff4f68;
+}
+
+/* Testimonial Section */
+#testimonials {
+  /* padding: 7% 15%; */
+  text-align: center;
+  background-color: #ef8172;
+  /* you can change the text color only by the color property. */
+  color: #ffff;
+}
+
+.testimonial-image {
+  width: 15%;
+  /* width make the image smaller */
+  border-radius: 100%;
+  /* border radium make the image round */
+  margin: 20px;
+}
+
+/* Press Section */
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  /* text align centers the content in it. */
+  padding-bottom: 3%;
+}
+
+.press-images {
+  width: 15%;
+  margin: 15px 15px 50px;
+}
+
+/* Carousel item */
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* pricing section */
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* Call to action section */
+#cta {
+  background-color: #ff4c68;
+  color: #f0ffff;
+  /* this color will change the color of text in this section */
+  text-align: center;
+  padding: 100px 0 100px 0;
+
+}
+
+/* footer section */
+#footer {
+  text-align: center;
+  padding: 100px 100px 0 100px;
+}
+
+.copyright {
+  margin-top: 100px;
+}
+
+.footer-icon {
+  margin: 50px;
+}
